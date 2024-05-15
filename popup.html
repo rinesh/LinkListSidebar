@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Link List Sidebar</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      width: 300px;
+      padding: 10px;
+    }
+    h3 {
+      margin-top: 0;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      margin: 5px 0;
+    }
+    #search {
+      margin-bottom: 10px;
+      width: calc(100% - 22px);
+      padding: 10px;
+    }
+    #filter {
+      margin-bottom: 10px;
+      width: 100%;
+    }
+    #actions {
+      margin-bottom: 10px;
+    }
+    button {
+      margin-right: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h3>Links on this page</h3>
+  <input type="text" id="search" placeholder="Search links">
+  <select id="filter">
+    <option value="all">All</option>
+    <option value="internal">Internal</option>
+    <option value="external">External</option>
+  </select>
+  <div id="actions">
+    <button id="copy-links">Copy Links</button>
+    <button id="open-links">Open All Links</button>
+  </div>
+  <ul id="link-list"></ul>
+  <script src="popup.js"></script>
+</body>
+</html>
